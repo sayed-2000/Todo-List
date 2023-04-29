@@ -56,6 +56,7 @@ function TOdoWrapper() {
             )
         ))
        };
+          <button className='todo-btnDelet' onClick={()=> setTodos([])}  >Delet All</button>
     </div>
   )
 }
