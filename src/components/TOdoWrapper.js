@@ -52,7 +52,7 @@ function TOdoWrapper() {
             todo.isEditing ? (
                 <EditTodoForm editTodo={editTask} task={todo} key={index}/>
             ) : (
-                      <Todo task={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo} editTodo={editTodo}/>
+                        todo.task === "" ? true : <Todo task={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo} editTodo={editTodo}/>
             )
         ))
        };
